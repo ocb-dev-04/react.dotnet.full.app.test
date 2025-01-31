@@ -1,0 +1,1 @@
+dotnet ef dbcontext optimize --context AppDbContext --output-dir PreCopiledEntities --project ../app/infrastructue/Persistence --startup-project ../app/deployables/Api

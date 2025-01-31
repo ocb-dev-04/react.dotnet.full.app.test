@@ -1,0 +1,1 @@
+dotnet ef migrations add v_1_0_0_AppDbContext_Migration --context AppDbContext --startup-project ../app/deployables/Api --project ../app/infrastructue/Persistence -o Migrations

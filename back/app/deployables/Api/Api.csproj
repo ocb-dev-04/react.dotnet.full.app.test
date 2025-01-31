@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.12">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.12">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\common\Presentation\Presentation.csproj" />
+		<ProjectReference Include="..\..\infrastructue\ElasticSearch\ElasticSearch.csproj" />
+		<ProjectReference Include="..\..\infrastructue\Persistence\Persistence.csproj" />
+		<ProjectReference Include="..\..\modules\permissions\Permissions.Application\Permissions.Application.csproj" />
+		<ProjectReference Include="..\..\modules\permissions\Permissions.Domain\Permissions.Domain.csproj" />
+	</ItemGroup>
+</Project>
